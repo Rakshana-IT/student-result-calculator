@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Result Page</title>
+
+<link rel="stylesheet" href="calc.css">
+
+</head>
+
+<body>
+
+<div class="result-container">
+
+<h1>Student Result</h1>
+
+<div id="output"></div>
+
+<a href="student.html" class="back-btn">
+Back
+</a>
+
+</div>
+
+<script>
+
+document.getElementById("output").innerHTML =
+
+`
+<h2>${localStorage.getItem("name")}</h2>
+
+<p><b>Register Number:</b>
+${localStorage.getItem("regno")}</p>
+
+<p><b>Total:</b>
+${localStorage.getItem("total")}/500</p>
+
+<p><b>Percentage:</b>
+${localStorage.getItem("percentage")}%</p>
+
+<p><b>Grade:</b>
+${localStorage.getItem("grade")}</p>
+
+<p><b>Status:</b>
+${localStorage.getItem("status")}</p>
+`;
+
+</script>
+
+</body>
+</html>
